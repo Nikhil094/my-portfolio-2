@@ -4,7 +4,7 @@ import "./Header.css";
 const Header = () => (
   <header className="header section fade-in" id="home">
     <img
-      src="nikhil.jpg" // Place this image inside /public or src/images
+      src="Nikhil.jpg" // Place this image inside /public or src/images
       alt="Nikhil Deshmukh"
       className="profile-img"
     />
