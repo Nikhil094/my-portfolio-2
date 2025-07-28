@@ -1,23 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Experience from "./components/Experience";
+import Skills from "./components/Skills";
+import Education from "./components/Education";
+import Footer from "./components/Footer";
+import "./App.css";
+import Contact from "./components/Contact";
+
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    document.body.className = darkMode ? "dark" : "light";
+  }, [darkMode]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="theme-toggle">
+        <label className="switch">
+          <input
+            type="checkbox"
+            onChange={() => setDarkMode(!darkMode)}
+            checked={darkMode}
+          />
+          <span className="slider round"></span>
+        </label>
+        <span>{darkMode ? "🌙 Dark Mode" : "☀️ Light Mode"}</span>
+      </div>
+
+      <Navbar />
+      <Header />
+      <About />
+      <Projects />
+      <Experience />
+      <Skills />
+      <Education />
+      <Contact />
+      <Footer />
     </div>
   );
 }
