@@ -32,7 +32,9 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="section fade-in">
+    //<section id="contact" className="section fade-in">
+      <section id="contact" className="section" data-aos="flip-up">
+
       <h2>Contact Me</h2>
       <form className="contact-form" onSubmit={handleSubmit}>
         <input

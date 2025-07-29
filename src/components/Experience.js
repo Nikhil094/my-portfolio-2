@@ -18,7 +18,9 @@ const experienceData = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="section fade-in">
+   // <section id="experience" className="section fade-in">
+      <section id="experience" className="section" data-aos="fade-right">
+
       <h2>Experience</h2>
       <div className="experience-timeline">
         {experienceData.map((item, index) => (

@@ -26,7 +26,9 @@ const educationList = [
 
 const Education = () => {
   return (
-    <section id="education" className="section fade-in">
+    //<section id="education" className="section fade-in">
+      <section id="education" className="section" data-aos="zoom-in">
+
       <h2>Education</h2>
       <div className="education-list">
         {educationList.map((edu, index) => (

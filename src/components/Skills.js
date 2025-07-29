@@ -38,7 +38,9 @@ const skills = {
 
 const Skills = () => {
   return (
-    <section id="skills" className="section fade-in">
+    //<section id="skills" className="section fade-in">
+      <section id="skills" className="section fade-in" data-aos="fade-left">
+
       <h2>Skills</h2>
       <div className="skills-grid">
         {Object.entries(skills).map(([category, list]) => (

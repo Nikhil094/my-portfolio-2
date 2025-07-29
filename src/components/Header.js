@@ -2,7 +2,9 @@ import React from "react";
 import "./Header.css";
 
 const Header = () => (
-  <header className="header section fade-in" id="home">
+  //<header className="header section fade-in" id="home">
+    <header className="header" data-aos="fade-down">
+
     <img
       src="Nikhil.jpg" // Place this image inside /public or src/images
       alt="Nikhil Deshmukh"
